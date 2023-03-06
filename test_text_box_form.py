@@ -86,7 +86,7 @@ class TestForm:
                     # подтвержаем данные в форме + спим (даем кнопке прогрузиться)
                     sleep(2)
                     form_page.click_submit_button()
-                    # проверяем ответ формы
+                    # проверяем отклик формы на корректность заполнения полей
                     assert 'field-error' not in self.driver.page_source, f'TEST {test_cnt} -> ERROR!'
                     print(f'TEST {test_cnt} -> SUCCESS')
                 except (Exception, WebDriverException) as ex:
@@ -103,5 +103,6 @@ class TestForm:
 
 
 if __name__ == "__main__":
+    # по умолчанию используем драйвер Google Chrome
     test = TestForm(webdriver.Chrome())
     test.test_form_submission()
