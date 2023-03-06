@@ -15,5 +15,5 @@ pip install -r requirements.txt
 ```
 4. Запустите скрипт python
 ```
-python text_box_testing_form.py
+python test_text_box_form.py
 ```
