@@ -1,4 +1,4 @@
-### Тестирование формы -> Text Form
+### Тестирование формы -> Text Box
 
 link:
 https://demoqa.com/text-box
